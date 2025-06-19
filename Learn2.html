@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign2u.com</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('images/bgimage1.0.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #f9b9aa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #7a4e3b;
+      font-family: cursive;
+    }
+
+    .nav-links a {
+     margin-left: 35px;
+     text-decoration: none;
+     font-weight: bold;
+     color: #89AC46;
+     font-size: 20px;
+     display: inline;
+     padding: 0;
+     transition: color 0.3s ease;
+   }
+
+  .nav-links a:hover {
+     color: #fc6c85;
+     text-decoration: underline;
+   }
+
+
+    .nav-links a:active {
+      color: red;
+    }
+
+.alphabet-section {
+  background-color: #fdf3d4; /* soft yellow background */
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.alphabet-title {
+  font-size: 32px;
+  color: #7a4e3b;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alphabet-container {
+  border: 6px solid #f9b9aa;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.alphabet-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+
+    .video-grid-section {
+      padding: 60px 30px;
+      background-color: #fffef2;
+      text-align: center;
+    }
+
+    .video-grid-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      background-color: #f9b9aa;
+      color: #7a4e3b;
+      padding: 10px 40px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      color: #7a4e3b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>Sign2u.com</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="learn.html">Learn</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </header>
+
+<!-- Sign Language Alphabet Section -->
+<section class="alphabet-section">
+  <h1 class="alphabet-title">Sign Language Alphabet</h1>
+  <div class="alphabet-container">
+    <img src="images/alphabet.png" alt="Sign Language Alphabet">
+  </div>
+</section>
+
+<!-- YouTube Video Section -->
+<section class="video-grid-section">
+  <h2>Learn with Videos</h2>
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/0FcwzMq4iWg" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/6_gXiBe9y9A" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/glkmwIPlhrI" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/a5BD8SjhPSg" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Sign2u.com. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="UserSupport.html">User Support</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

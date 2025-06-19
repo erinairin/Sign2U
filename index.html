@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign2u.com</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('images/bgimage1.0.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #f9b9aa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #7a4e3b;
+      font-family: cursive;
+    }
+
+   .nav-links a {
+     margin-left: 35px;
+     text-decoration: none;
+     font-weight: bold;
+     color: #89AC46;
+     font-size: 20px;
+     display: inline;
+     padding: 0;
+     transition: color 0.3s ease;
+   }
+
+  .nav-links a:hover {
+     color: #fc6c85;
+     text-decoration: underline;
+   }
+
+
+    .nav-links a:active {
+      color: red;
+    }
+
+    .hero-banner {
+      background: url('images/banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 100px 50px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-text {
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+      line-height: 1.3;
+      margin: 0;
+      animation: bounceText 2s infinite;
+    }
+
+    @keyframes bounceText {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .info-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f1c40f;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .image-boxes {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .image-box {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background-color: #f9b9aa;
+      color: #7a4e3b;
+      padding: 10px 40px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      color: #7a4e3b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span>Sign2u.com</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="learn.html">Learn</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-text">
+      <h1>Exploring.<br>Sign.<br>Language.</h1>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-text">
+      <h2>Ready to test what you've learned?</h2>
+      <a href="quiz.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <div class="image-boxes">
+      <div class="image-box">
+        <img src="images/home1.jpg" alt="Image 1">
+      </div>
+      <div class="image-box">
+        <img src="images/home2.jpg" alt="Image 1">
+      </div>
+      <div class="image-box">
+        <img src="images/home3.jpg" alt="Image 1">
+      </div>
+    </div>
+  </section>
+
+<section style="padding: 50px; text-align: center;">
+  <h2 style="font-size: 32px; color: #333; margin-bottom: 30px;">Why Choose Sign2u?</h2>
+  <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+    
+    <div style="background-color: #ffffff; padding: 25px; width: 250px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <img src="images/easy.png" alt="Easy Lessons" style="width: 60px; margin-bottom: 15px;">
+      <h4 style="color: #89AC46; font-size: 20px; margin-bottom: 10px;">Easy Lessons</h4>
+      <p style="color: #555; font-size: 15px;">Simple and beginner-friendly</p>
+    </div>
+
+    <div style="background-color: #ffffff; padding: 25px; width: 250px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <img src="images/learn.png" alt="Learn Anytime" style="width: 60px; margin-bottom: 15px;">
+      <h4 style="color: #89AC46; font-size: 20px; margin-bottom: 10px;">Learn Anytime</h4>
+      <p style="color: #555; font-size: 15px;">Flexible, at your own pace</p>
+    </div>
+
+    <div style="background-color: #ffffff; padding: 25px; width: 250px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <img src="images/communitysupport.png" alt="Community Support" style="width: 60px; margin-bottom: 15px;">
+      <h4 style="color: #89AC46; font-size: 20px; margin-bottom: 10px;">Community Support</h4>
+      <p style="color: #555; font-size: 15px;">You're not learning alone</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Optional hover effect with CSS -->
+<style>
+  section div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+</style>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Sign2u.com. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="UserSupport.html">User Support</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

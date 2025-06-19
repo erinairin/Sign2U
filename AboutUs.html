@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign2u.com</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('images/bgimage1.0.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #f9b9aa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #7a4e3b;
+      font-family: cursive;
+    }
+
+   .nav-links a {
+     margin-left: 35px;
+     text-decoration: none;
+     font-weight: bold;
+     color: #89AC46;
+     font-size: 20px;
+     display: inline;
+     padding: 0;
+     transition: color 0.3s ease;
+   }
+
+  .nav-links a:hover {
+     color: #fc6c85;
+     text-decoration: underline;
+   }
+
+
+    .nav-links a:active {
+      color: red;
+    }
+
+    /* Vision & Mission Section */
+    .vision-mission-section {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      padding: 40px 20px;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .vision-card {
+      background-color: #fe9090;
+      color: #e0d7cc;
+    }
+
+    .vision-card h3 {
+      font-size: 24px;
+      color: #f0ffe0;
+      margin-bottom: 15px;
+    }
+
+    .mission-card {
+      background-color: #ffafaf;
+      color: #f0ffe0;
+    }
+
+    .mission-card h3 {
+      font-size: 24px;
+      color: #f0ffe0;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+/* Responsive for smaller devices */
+@media (max-width: 650px) {
+  .vision-mission-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* Footer styles */
+.footer {
+  background-color: #f9b9aa;
+  color: #7a4e3b;
+  padding: 10px 40px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #7a4e3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>Sign2u.com</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="learn.html">Learn</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </header>
+
+<section style="background-color: #f0ffe0; padding: 40px 20px; text-align: center; margin: 30px 0;">
+  <img src="images/vm1.jpg" alt="Landscape Illustration" style="width: 600px; border-radius: 50px;" />
+  <h2 style="font-size: 28px; color: #333; margin-top: 20px;">Why sign language ?</h2>
+  <p style="max-width: 700px; margin: 0 auto; color: #555; font-size: 16px; line-height: 1.6; text-align: justify;">
+    Sign language is a vital form of communication for the deaf and hard-of-hearing community. It promotes equal access to information,
+    fosters inclusion, and breaks down communication barriers between hearing and non-hearing individuals. By using multimedia content,
+    learning sign language becomes more engaging, accessible, and effective for people of all ages and abilities.
+  </p>
+</section>
+
+  <section class="vision-mission-section">
+    <div class="card vision-card">
+      <h3>Vision</h3>
+      <p>
+        To become the main digital platform in empowering universal communication through interactive
+        and multimedia sign language learning.
+      </p>
+    </div>
+
+    <div class="card mission-card">
+      <h3>Mission</h3>
+      <p>
+        Providing an interactive and easily accessible sign language learning platform through multimedia
+	content to support inclusive communication and community awareness.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Sign2u.com. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="UserSupport.html">User Support</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
