@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign2u.com</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('images/bgimage1.0.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .navbar {
+      background-color: #f9b9aa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #7a4e3b;
+      font-family: cursive;
+    }
+
+    .nav-links a {
+      margin-left: 35px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #89AC46;
+      font-size: 20px;
+      display: inline;
+      padding: 0;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #fc6c85;
+      text-decoration: underline;
+    }
+
+    .nav-links a:active {
+      color: red;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    .video-grid-section {
+      margin-top: 20px; 
+      padding: 60px 30px;
+      background-color: #fffef2;
+      text-align: center;
+    }
+
+    .video-grid-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .video-grid video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .learn-more-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #89AC46;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .learn-more-button:hover {
+      background-color: #6d8b38;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      background-color: #f9b9aa;
+      color: #7a4e3b;
+      padding: 10px 40px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      color: #7a4e3b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>Sign2u.com</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="learn.html">Learn</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </header>
+<main class="main-content">
+  <!-- Local Video Section -->
+  <section class="video-grid-section">
+    <h2>Learn Sign Language With Us</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <video controls>
+          <source src="videos1/videoASL3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Alphabet A-Z</p>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="videos/videoASL2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Numbers 1-20</p>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="videos/videoASL.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Sign Language for Beginners</p>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="videos1/videoASL4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Food</p>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="videos1/videoASL5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Sports in Sign Language</p>
+      </div>
+    </div>
+    <a href="learn2.html" class="learn-more-button">Explore More</a>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Sign2u.com. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="UserSupport.html">User Support</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
